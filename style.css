@@ -111,3 +111,28 @@ body{
     color: rgb(255, 255, 255);
     border: none;
 }
+
+.bodyContent{
+    height: 85vh;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+}
+.leftContent{
+    background-color: #252424;
+    width: 30%;
+    min-width: 15%;
+    max-width: 45%;
+    height: 80vh;
+    resize: horizontal;
+    overflow: auto;
+    border-radius: 15px 0 0 15px;
+    
+}
+.rightContent{
+    background-color: #252424;
+    width: 100%;
+    height: 80vh;
+    margin: 0 0 0 10px;
+    border-radius: 0 15px 15px 0;
+}
