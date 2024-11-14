@@ -1,5 +1,7 @@
 body{
     background-color: rgb(10, 10, 10);
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .header{
@@ -119,14 +121,18 @@ body{
     align-items: center;
 }
 .leftContent{
-    background-color: #252424;
+    background-color: #1b1b1b;
     width: 30%;
     min-width: 15%;
     max-width: 45%;
     height: 80vh;
-    resize: horizontal;
     overflow: auto;
+    resize: horizontal; 
     border-radius: 15px 0 0 15px;
+    padding: 10px;
+    
+    display: flex;
+    position: relative;
     
 }
 .rightContent{
@@ -135,4 +141,47 @@ body{
     height: 80vh;
     margin: 0 0 0 10px;
     border-radius: 0 15px 15px 0;
+    padding: 10px;
 }
+.playlists{
+    /* border: 2px solid white; */
+    height: 70vh;
+    width: 95%;
+    bottom: 2%;
+    position: absolute;
+    border-radius: 0 0 0 15px;
+    display:block;
+    justify-content: center;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.playlist{
+    /* border: 2px solid white; */
+    width: 98%;
+    height: 8%;
+    margin: 0 15px 15px 0;    
+    border-radius: 10px;
+    background-color: #1b1b1b;
+    
+}
+.playlist:hover{
+    /* border: 2px solid white; */
+    width: 98%;
+    height: 8%;
+    margin: 0 15px 15px 0;    
+    border-radius: 10px;
+    background-color: #252424;
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background: #505050;
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
