@@ -157,7 +157,7 @@ input[type=text] {
 }
 .playlists{
     /* border: 2px solid white; */
-    height: 70vh;
+    height: 67vh;
     width: 95%;
     bottom: 2%;
     position: absolute;
@@ -172,7 +172,7 @@ input[type=text] {
 .playlist{
     /* border: 2px solid white; */
     width: 98%;
-    height: 8%;
+    height: 10%;
     margin: 0 15px 15px 0;    
     border-radius: 10px;
     background-color: #1b1b1b;
@@ -181,13 +181,7 @@ input[type=text] {
     
 }
 .playlist:hover{
-    /* border: 2px solid white; */
-    width: 98%;
-    height: 8%;
-    margin: 0 15px 15px 0;    
-    border-radius: 10px;
-    background-color: #252424;
-    
+    background-color: #252424;  
 }
 
 ::-webkit-scrollbar-thumb{
@@ -293,15 +287,68 @@ input[type=text].searchPlay{
     display: flex;
     border-radius: 25px;
     font-size: 16px;
-    background-image: url('search.png');
+    background-image: url('search.png'); 
     background-size: 20px;
     margin: 5px;
+    padding: 20px 30px 0 10px;
     transition: width 0.2s ease-in-out;
 }
 input[type=text].searchPlay:focus {
     width: 50%;
+    margin: 5px;
     filter: opacity(100%);
     border: none;
     outline: none;
     border-radius: 15px;
+    padding: 10px 0 10px 40px;
+}
+
+.recent{
+    width: 70px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    filter: opacity(50%);
+}
+.recent:hover{
+    transform: scale(1.05);
+    filter: opacity(100%);
+}
+.list{
+    width: 20px;
+    margin: 5px;
+}
+
+.searchContain{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.subTopic{
+    width: 80%;
+    top: 8%;
+    position: absolute;
+    margin: 5px;
+}
+.subTopics{
+    margin: 5px;
+    border-radius: 25px;
+    border: none;
+    width: max-content;
+    height: fit-content;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    background: #252424;
+}
+.subTopics:hover{
+    background: #505050;
 }
