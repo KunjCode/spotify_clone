@@ -148,7 +148,7 @@ input[type=text] {
     
 }
 .rightContent{
-    background-color: #252424;
+    background: linear-gradient(#252424, #1b1b1b, #1b1b1b);
     width: 100%;
     height: 80vh;
     margin: 0 0 0 10px;
@@ -351,4 +351,35 @@ input[type=text].searchPlay:focus {
 }
 .subTopics:hover{
     background: #505050;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    /* margin: 0 10px; */
+}
+.topbarli{
+    /* width: max-content; */
+    padding: 7px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 5px 0 0;
+    color: white;
+    background-color: #505050cd;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topbarli:hover{
+    background-color: #505050;
+}
+#All{
+    width: 50px;
+}
+#Music{
+    width: 70px;
+}
+#Podcasts{
+    width: 85px;
 }
